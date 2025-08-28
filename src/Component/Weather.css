@@ -181,3 +181,14 @@ body {
     font-size: 0.9rem;
   }
 }
+
+.extra-details {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;       /* Allows items to wrap on small screens */
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
