@@ -132,13 +132,13 @@ export default function WeatherApp() {
       </div>
 
       {loading && <p>Loading...</p>}
-      {error && <p className="text-danger">{error}</p>}
+      {error && <p className="error-text">{error}</p>}
 
       {weather && (
         <div className="weather-card fade-in">
           <h2>{weather.city}</h2>
-          <p>🌡 {weather.temperature}°C (Now)</p>
-          <p>💨 {weather.windspeed} km/h wind</p>
+          <p>🌡temperature {weather.temperature}°C (Now)</p>
+          <p>💨 windspeed {weather.windspeed} km/h wind</p>
 
           <h3>🌍 Extra Weather Details</h3>
           <p>💧 Humidity: {weather.humidity}%</p>

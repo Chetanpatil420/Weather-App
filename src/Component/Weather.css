@@ -156,3 +156,28 @@ body {
     font-size: 0.95rem;
   }
 }
+
+
+.city-error {
+  display: block;
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  word-wrap: break-word; /* ensures long messages wrap */
+}
+
+.error-text {
+  display: block;
+  color: red;
+  text-align: center;
+  margin: 5px 0 10px 0;
+  font-size: 1rem;
+  word-wrap: break-word; /* ensures it wraps on small screens */
+}
+
+@media (max-width: 500px) {
+  .error-text {
+    font-size: 0.9rem;
+  }
+}
