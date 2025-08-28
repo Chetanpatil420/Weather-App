@@ -1,0 +1,103 @@
+
+body {
+  background: linear-gradient(to bottom, #87ceeb, #ffffff); 
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.weather-container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* App title */
+.weather-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Search input */
+.search-input input {
+  background: #f7f9fc;
+  border-radius: 8px;
+}
+
+/* Search button */
+.search-button {
+  background: #28a745 !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 10px 0 !important;
+  border-radius: 8px !important;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background: #218838 !important;
+}
+
+/* Weather info card */
+.weather-card {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 4px 4px 12px #ccc, -4px -4px 12px #fff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Weather details */
+.weather-card p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Rain alert messages */
+.rain-alert {
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.rain-warning {
+  background: rgba(0, 123, 255, 0.1);
+  color: #0056b3;
+}
+
+.rain-safe {
+  background: rgba(40, 167, 69, 0.1);
+  color: #1e7e34;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  
+
+/* Input error border */
+.input-error {
+  border: 2px solid red !important;
+}
+
+/* Error message */
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  animation: fadeIn 0.4s ease-in;
+}
