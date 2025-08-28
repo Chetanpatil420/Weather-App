@@ -2,15 +2,15 @@ import { useState } from "react";
 import "./Weather.css";// css file
 
 export default function WeatherApp() {
-  const [city, setCity] = useState("");
-  const [weather, setWeather] = useState(null);
+  const [city,setCity] = useState("");
+  const [weather,setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [bgClass, setBgClass] = useState("bg-default");
-  const [inputError, setInputError] = useState(false);
+  const [error,setError] = useState("");
+  const [bgClass,setBgClass] = useState("bg-default");
+  const [inputError,setInputError] = useState(false);
 
   const fetchWeather = async () => {
-    console.log(" fetchWeather called with city:", city);
+    console.log(" fetchWeather city", city);
 
     if (!city.trim()) {
       console.warn("No city entered");
@@ -62,7 +62,7 @@ export default function WeatherApp() {
         return;
       }
 
-      // ✅ Background
+      
       const code = weatherData.current_weather.weathercode;
       const currentTime = new Date(weatherData.current_weather.time);
       const hour = currentTime.getHours();
@@ -87,7 +87,7 @@ export default function WeatherApp() {
       });
       console.log(" Matched Hourly Time:", weatherData.hourly.time[hourIndex]);
 
-      // ✅ Build result safely
+      
       const result = {
         city: `${name}, ${country}`,
         temperature: weatherData.current_weather.temperature,
