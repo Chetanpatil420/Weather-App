@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 🌦 Weather App
 
 A simple and fast Weather App built with React + Open-Meteo API, where users can search any city and view live weather updates with beautiful UI and animations.
@@ -27,3 +28,7 @@ A simple and fast Weather App built with React + Open-Meteo API, where users can
 🎨 CSS + Animations
 
 🌍 Open-Meteo API
+=======
+# Weather-App
+A modern and responsive Weather App built with React that provides real-time weather updates for any city in the world. It uses the Open-Meteo API for accurate forecasts and features a clean UI with caching for faster performance.
+>>>>>>> b0cb69311eb7f792be8ffe84a4af5930fc4da3c0
